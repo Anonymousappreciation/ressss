@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Office Escape: The Mystery Room</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Main Game Container -->
+  <div id="game-app" class="game-container">
+    
+    <!-- Top HUD Bar -->
+    <header class="hud-bar">
+      <div class="hud-brand">
+        <span class="lock-icon">🔐</span>
+        <span class="game-title">OFFICE ESCAPE</span>
+      </div>
+
+      <div class="hud-center">
+        <span id="team-tag" class="team-badge">Team Alpha</span>
+        <div class="timer-display">
+          <span class="timer-icon">⏱️</span>
+          <span id="timer-text" class="timer-text">20:00</span>
+        </div>
+      </div>
+
+      <div class="hud-actions">
+        <div class="score-display">
+          <span class="score-label">SCORE:</span>
+          <span id="score-text" class="score-val">0</span>
+        </div>
+        <button id="sound-btn" class="icon-btn" title="Toggle Sound">🔊</button>
+      </div>
+    </header>
+
+    <!-- Notification Toast -->
+    <div id="toast-banner" class="toast-banner hidden"></div>
+
+    <!-- MAIN VIEW CONTAINER -->
+    <main id="main-view" class="main-view">
+      <!-- Dynamic Views: Start View, Room Scene View, Modal View, Victory View -->
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
